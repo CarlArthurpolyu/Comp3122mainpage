@@ -1,0 +1,162 @@
+/* Clean and minimalist styles */
+
+* {
+    scroll-behavior: smooth;
+}
+
+/* Navigation underline effect */
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #60a5fa, #22d3ee);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Smooth transitions */
+button, a[href*="#"] {
+    transition: all 0.2s ease;
+}
+
+a[href*="#"] {
+    text-decoration: none;
+}
+
+/* Hover effects for project cards */
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+}
+
+/* Image hover */
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #60a5fa, #22d3ee);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #3b82f6, #06b6d4);
+}
+
+/* Focus states for accessibility */
+button:focus,
+a:focus {
+    outline: 2px solid #60a5fa;
+    outline-offset: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Button effects */
+.bg-blue-500 {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-blue-500:hover {
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+/* Link effects */
+a {
+    transition: color 0.2s ease;
+}
+
+a:active {
+    opacity: 0.8;
+}
+
+/* Section spacing */
+section {
+    transition: all 0.2s ease;
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+    animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subtle hover text color change */
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* Clean text */
+body {
+    color: #e5e7eb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Improve readability */
+p {
+    line-height: 1.6;
+}
+
+li {
+    line-height: 1.5;
+}
+
+/* Subtle card shadow on hover */
+div[class*="bg-slate-800"] {
+    transition: all 0.2s ease;
+}
+
+div[class*="bg-slate-800"]:hover {
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.1);
+}

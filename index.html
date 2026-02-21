@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Arthur - AI & ML Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-gray-100">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur border-b border-slate-700">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                CA
+            </div>
+            <div class="hidden md:flex space-x-6 text-sm">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-xl">☰</button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 px-4 py-2 space-y-1 text-sm">
+            <a href="#about" class="block py-1 hover:text-blue-400">About</a>
+            <a href="#skills" class="block py-1 hover:text-blue-400">Skills</a>
+            <a href="#projects" class="block py-1 hover:text-blue-400">Projects</a>
+            <a href="#contact" class="block py-1 hover:text-blue-400">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="flex items-center justify-center px-4 py-20">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-6">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-2">
+                        <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                            Carl Arthur
+                        </span>
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-1">AI & Machine Learning Engineer</p>
+                    <p class="text-gray-400 text-sm">Master's Student at Linköping University • Exchange @ PolyU Hong Kong</p>
+                </div>
+                <p class="text-gray-300 leading-relaxed max-w-lg">
+                    4th year engineering student specializing in AI and Machine Learning. Passionate about data analysis and using ML to solve real-world problems.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#contact" class="px-6 py-2 bg-blue-500 hover:bg-blue-600 rounded font-medium text-sm transition transform hover:scale-105">
+                        Get In Touch
+                    </a>
+                    <a href="#projects" class="px-6 py-2 border border-blue-400 hover:bg-blue-400 hover:text-slate-900 rounded font-medium text-sm transition">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-xl blur-2xl opacity-30 animate-pulse"></div>
+                    <img src="myphoto.jpg" alt="Carl Arthur" class="relative w-72 h-72 rounded-xl object-cover border-2 border-slate-700 shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8">
+                <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">About</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        I'm from Sweden, currently pursuing a Master's degree in AI and Machine Learning. I have experience as a Teaching Assistant at Linköping University and am on an exchange semester at Hong Kong Polytechnic University.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        My main focus is on data handling, analysis, and leveraging machine learning to provide value within companies. I aim to transform raw data into actionable insights and build predictive models that drive business decisions.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 text-blue-400">Experience</h3>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
+                            Teaching Assistant at Linköping University
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
+                            ML projects in anomaly detection
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
+                            Data analysis and predictive modeling
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-4 bg-slate-800/20">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8">
+                <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Skills</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Programming Languages -->
+                <div class="bg-slate-800/40 p-6 rounded-lg border border-slate-700 hover:border-blue-400 transition">
+                    <h3 class="text-lg font-semibold mb-4 text-blue-400">Languages</h3>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
+                            Python
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
+                            R
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
+                            Java
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ML & Data Science -->
+                <div class="bg-slate-800/40 p-6 rounded-lg border border-slate-700 hover:border-cyan-400 transition">
+                    <h3 class="text-lg font-semibold mb-4 text-cyan-400">ML & Data Science</h3>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span>
+                            ML Models & Algorithms
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span>
+                            Anomaly Detection
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span>
+                            Predictive Analytics
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></span>
+                            Data Visualization
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Other Skills -->
+                <div class="bg-slate-800/40 p-6 rounded-lg border border-slate-700 hover:border-blue-400 transition">
+                    <h3 class="text-lg font-semibold mb-4 text-blue-400">Other Skills</h3>
+                    <ul class="space-y-2 text-gray-300 text-sm">
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
+                            Teaching & Mentoring
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
+                            Research & Analysis
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
+                            Problem Solving
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
+                            Communication
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8">
+                <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Projects</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="project-card bg-slate-800/40 rounded-lg overflow-hidden border border-slate-700 hover:border-blue-400 transition">
+                    <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 p-6 h-20 flex items-center justify-center">
+                        <div class="text-4xl">🔒</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-blue-400">Anomaly Detection with ML</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Bachelor project applying machine learning to detect anomalies in log data. Demonstrated that offline anomaly detection achieves excellent performance with high F1 scores.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-3">
+                            <span class="px-2 py-1 bg-slate-700 text-blue-400 rounded text-xs">Python</span>
+                            <span class="px-2 py-1 bg-slate-700 text-cyan-400 rounded text-xs">Machine Learning</span>
+                            <span class="px-2 py-1 bg-slate-700 text-blue-400 rounded text-xs">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-slate-800/40 rounded-lg overflow-hidden border border-slate-700 hover:border-cyan-400 transition">
+                    <div class="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 p-6 h-20 flex items-center justify-center">
+                        <div class="text-4xl">🏃</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-cyan-400">Running Performance Prediction</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Analyzing Strava running data with ML to predict marathon times and optimize performance based on training parameters.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-3">
+                            <span class="px-2 py-1 bg-slate-700 text-cyan-400 rounded text-xs">Python</span>
+                            <span class="px-2 py-1 bg-slate-700 text-blue-400 rounded text-xs">Data Analysis</span>
+                            <span class="px-2 py-1 bg-slate-700 text-cyan-400 rounded text-xs">ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-slate-800/20">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8">
+                <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Contact</span>
+            </h2>
+
+            <div class="bg-slate-800/40 rounded-lg p-6 border border-slate-700 max-w-2xl">
+                <p class="text-gray-300 mb-6 text-sm">
+                    I'm interested in connecting with professionals in AI, data science, and machine learning. Feel free to reach out!
+                </p>
+                
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="text-lg">📧</span>
+                        <div>
+                            <p class="text-xs text-gray-400">Email</p>
+                            <p class="text-gray-300 text-sm">25142201x@connect.polyu.hk</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-lg">💼</span>
+                        <div>
+                            <p class="text-xs text-gray-400">LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/carl-arthur-8338281b9" class="text-blue-400 hover:text-blue-300 text-sm transition">linkedin.com/in/carl-arthur-8338281b9</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 px-4 border-t border-slate-700 text-center text-gray-500 text-xs">
+        <div class="max-w-5xl mx-auto">
+            <p>&copy; 2026 Carl Arthur</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
